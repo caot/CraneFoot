@@ -1,0 +1,92 @@
+# Cranefoot3 configuration file.
+# Ville-Petteri Makinen 2006
+
+# General notes:
+# - To draw a pedigree, you must provide at least a PedigreeFile,
+#   PedigreeName, NameVariable, FatherVariable and MotherVariable.
+# - Use ASCII text files for input, with an Excel sheet like heading row.
+# - Variables are detected based on their headings.
+# - By default, data is read from the pedigree file, but you can give other
+#   input files as well for most of the variables.
+# - Output format is PostScript graphics, use image processing software
+#   (e.g. Gimp, ImageMagick) to convert to other formats.
+
+# Use these two instructions to specify the primary input file and naming
+# of the output files. Suppose you set PedigreeName to 'myPedigree', then
+# the main document will be named 'myPedigree.ps' and the image files
+# 'myPedigree_<family_name>.eps', where family names are those given in the
+# input file. In addition, the topology and node coordinates will be saved
+# in 'myPedigree.topology.eps'.
+PedigreeFile       pedigree.txt
+PedigreeName       myPedigree
+
+# These are the topologically relevant variables. Name, father and mother
+# should be available in the primary file (i.e. PedigreeFile), but the
+# others can be given in separate files if necessary. In this case, gender
+# and sibling order (e.g. age) is in a separate file and, to avoid unnecessary
+# work, it is not necessary that these secondary input files are sorted or
+# that they contain a row for every individual. You must, however, make sure
+# that every file contains a name column, in this case with the heading
+# 'NAME' because without it the additional information cannot be assigned to
+# correct individuals.
+#SubgraphVariable   FAMILY
+NameVariable       NAME
+FatherVariable     FATHER
+MotherVariable     MOTHER
+#GenderVariable     GENDER      phenotypes.txt
+#AgeVariable        SIBORD      phenotypes.txt
+
+# Below are the variables that alter the visual outlook. Again, the secondary
+# input files need not be sorted or complete. If no file name is given,
+# CraneFoot looks for a variable in the pedigree file by default.
+#ArrowVariable      INDEX
+#ColorVariable      RISK        phenotypes.txt
+#PatternVariable    DISEASE     phenotypes.txt
+#SlashVariable      DEAD        phenotypes.txt
+#ShapeVariable      OCCUP       phenotypes.txt
+TextVariable       NAME        pedigree.txt
+#TextVariable       GTYPE_A     genotypes.txt
+#TextVariable       GTYPE_B     genotypes.txt
+#TracerVariable     NO_DATA     phenotypes.txt
+
+# It is often necessary to list the meanings of symbols so that every reader
+# can understand the pedigree picture. CraneFoot create a legend for every
+# family automatically, based on the common instructions. These info commands
+# do not affect the pedigree itself in any way, except taking a small
+# portion of the page. The first value (e.g. 'low') is a short description of
+# the symbol, and the second (e.g. 999900) indicates the symbol itself.
+#ColorInfo          low         999900      
+#ColorInfo          high        000099
+#PatternInfo        mild        21      
+#PatternInfo        moderate    41      
+#PatternInfo        severe      52
+#ShapeInfo	   student     1   
+#ShapeInfo	   sailor      2
+#ShapeInfo	   scientist   3
+#ShapeInfo	   unknown     4
+#ShapeInfo	   prisoner    5
+#ShapeInfo	   pensioner   6
+#ShapeInfo	   athlete     7
+#ShapeInfo	   priest      8
+
+# Unlike the previous versions of CraneFoot, the third generation employs an
+# undeterministic optimization algorithm the spreads the family graph around
+# the canvas. For this reason, the user can set a time limit to ensure that
+# the program completes in reasonable time. It is also possible to set a
+# fixed seed for the random number generator to ensure repeatable layouts.
+#RandomSeed         12345
+#TimeLimit          30
+
+# Miscellaneous commands. The first value for PaperSize sets the main
+# document dimensions, the second sets a fixed paper size for the .eps files.
+# The optimal bounding box for an .eps file is rarely a standard paper size
+# and thus might cause problems when converting to other formats.
+#Delimiter          tab                  # tab/ws/(character)
+#FigureLimit        10                   # max number of .eps files 
+#FontSize           10                   # pt
+#BackgroundColor    999999               # RRGGBB
+#ForegroundColor    000000
+#PageSize           letter      auto     # a0...a5/letter/auto
+#PageOrientation    portrait             # portrait/landscape
+#VerboseMode        on                   # on/off
+

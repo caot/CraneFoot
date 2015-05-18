@@ -1,0 +1,786 @@
+%!PS-Adobe-1.0
+%%Creator: CraneFoot, Scriptum 1.0 Jan 13 2006
+%%CreationDate: Jan 15 2006
+%%Title: myPedigree_family.eps
+%%Pages: 1
+%%BoundingBox: 0 0 1145 1269
+%%EndComments
+
+% fonts
+/HELV_HUGE {/Helvetica-Bold findfont 0.7056 scalefont setfont} def
+/HELV_LARGE {/Helvetica findfont 0.5292 scalefont setfont} def
+/HELV {/Helvetica findfont 0.3528 scalefont setfont} def
+/HELV_BOLD {/Helvetica-Bold findfont 0.3528 scalefont setfont} def
+/HELV_ITALIC {/Helvetica-Italic findfont 0.3528 scalefont setfont} def
+/HELV_SMALL {/Helvetica findfont 0.2822 scalefont setfont} def
+/COUR_BOLD {/Courier-Bold findfont 0.3528 scalefont setfont} def
+/COUR_BOLD_SMALL {/Courier-Bold findfont 0.2822 scalefont setfont} def
+
+% predefined colors
+/BLACK {0 setgray} def
+/GRAY {0.6 setgray} def
+/WHITE {1 setgray} def
+/RED {1 0.2 0.05 setrgbcolor} def
+/GREEN {0.2 1 0.1 setrgbcolor} def
+/BLUE {0.1 0.4 1 setrgbcolor} def
+/YELLOW {1 0.95 0.5 setrgbcolor} def
+/ORANGE {1 0.6 0.2 setrgbcolor} def
+/BIRCH {1 0.95 0.8 setrgbcolor} def
+/SKY {0.0 0.35 0.65 setrgbcolor} def
+
+% string procedures
+/showr {dup stringwidth add -1 mul 0 rmoveto show} def
+/showc {dup stringwidth add -0.5 mul 0 rmoveto show} def
+
+% shorthands
+/BG {1.0000 1.0000 1.0000 setrgbcolor} def
+/FG {newpath 0.0000 0.0000 0.0000 setrgbcolor 0.04 mul setlinewidth} def
+/CP {charpath} def
+/CL {closepath} def
+/F {fill} def
+/GS {gsave} def
+/GR {grestore} def
+/L {lineto} def
+/RL {rlineto} def
+/M {moveto} def
+/NP {newpath} def
+/S {stroke} def
+/SC {setrgbcolor} def
+/SG {setgray} def
+/SL {setlinewidth} def
+/FF {/Helvetica findfont} def
+/SF {scalefont setfont} def
+/SH {dup gsave 1.0000 1.0000 1.0000 setrgbcolor
+  true charpath stroke grestore show} def
+
+% shape primitives
+/s.1 {
+newpath 0 360 arc closepath
+} def
+/s.2 {
+0.9 mul /rp exch def /yp exch def /xp exch def
+newpath xp yp rp 1.077350269 mul add moveto
+rp 1.154700538 mul rp -2 mul rlineto rp -2.309401077 mul 0 rlineto
+closepath
+} def
+/s.3 {
+1.05 mul /rp exch def /yp exch def /xp exch def
+newpath xp rp add yp rp 3 div sub moveto 0 rp 1.5 div rlineto
+rp -1.5 div 0 rlineto 0 rp 1.5 div rlineto
+rp -1.5 div 0 rlineto 0 rp -1.5 div rlineto
+rp -1.5 div 0 rlineto 0 rp -1.5 div rlineto
+rp 1.5 div 0 rlineto 0 rp -1.5 div rlineto
+rp 1.5 div 0 rlineto 0 rp 1.5 div rlineto closepath
+} def
+/s.4 {
+/rp exch def /yp exch def /xp exch def
+newpath xp rp sub yp moveto
+rp rp 1.16 mul rlineto rp rp -1.16 mul rlineto
+rp neg rp -1.16 mul rlineto closepath
+} def
+/s.5 {
+1.16 mul /rp exch def /yp exch def /xp exch def
+newpath xp rp 0.7648 mul add yp rp 0.6442 mul add moveto
+rp -1.7623 mul rp -0.7158 mul rlineto
+rp 1.8465 mul rp -0.4567 mul rlineto
+rp -1.2254 mul rp 1.4548 mul rlineto
+rp 0.1362 mul rp -1.8972 mul rlineto closepath
+} def
+/s.6 {
+0.9 mul /rp exch def /yp exch def /xp exch def
+newpath xp yp rp 1.077350269 mul sub moveto
+rp 1.154700538 mul rp 2 mul rlineto rp -2.309401077 mul 0 rlineto
+closepath
+} def
+/s.7 {
+0.9 mul /rp exch def /yp exch def /xp exch def
+newpath xp rp add yp rp add moveto
+0 rp -2 mul rlineto rp -2 mul 0 rlineto 0 rp 2 mul rlineto
+closepath
+} def
+/square {
+/rp exch def /yp exch def /xp exch def
+newpath xp rp add yp rp add moveto
+0 rp -2 mul rlineto rp -2 mul 0 rlineto 0 rp 2 mul rlineto
+closepath
+} def
+/rect {
+/hp exch def /wp exch def /yp exch def /xp exch def
+newpath xp wp add yp hp add moveto
+0 hp -2 mul rlineto wp -2 mul 0 rlineto 0 hp 2 mul rlineto
+closepath
+} def
+/circle {
+newpath 0 360 arc closepath
+} def
+/diamond {
+1.15 mul /rp exch def /yp exch def /xp exch def
+newpath xp rp sub yp moveto
+rp rp rlineto rp rp neg rlineto rp neg rp neg rlineto
+closepath
+} def
+
+% textures
+/texture {
+/i exch def /r exch def /y exch def /x exch def
+x y r 2.5 div sub moveto i 4 string cvs showc
+} def
+/texture.1 {
+/i exch def /r exch def /y exch def /x exch def
+gsave x y translate 45 i mul rotate
+2 r mul r moveto -4 r mul 0 rlineto stroke
+2 r mul r 2 div moveto -4 r mul 0 rlineto stroke
+2 r mul 0 moveto -4 r mul 0 rlineto stroke
+2 r mul r -2 div moveto -4 r mul 0 rlineto stroke
+2 r mul r neg moveto -4 r mul 0 rlineto stroke grestore
+} def
+/texture.2 {
+/i exch def /r exch def /y exch def /x exch def
+gsave x y translate 90 i mul rotate r r r square fill
+grestore
+} def
+/texture.3 {
+/i exch def /r exch def /y exch def /x exch def
+gsave x y translate 90 i mul 45 add rotate
+0 r r circle fill grestore
+} def
+/texture.4 {
+/i exch def /r exch def /y exch def /x exch def
+gsave x y translate 90 i mul rotate 0 r 2 r mul r rect fill grestore
+} def
+/texture.5 {
+/i exch def /r exch def /y exch def /x exch def
+gsave x y translate 45 i mul rotate
+r r r square fill r neg r neg r square fill grestore
+} def
+/texture.6 {
+/i exch def /r exch def /y exch def /x exch def
+gsave x y translate 90 i mul rotate
+2 {0 r 2 r mul r rect fill 90 rotate} repeat grestore
+} def
+
+% patterns of texture
+/p.1 {pop pop pop} def
+/p.2 {2 texture} def
+/p.3 {3 texture} def
+/p.4 {4 texture} def
+/p.5 {5 texture} def
+/p.6 {6 texture} def
+/p.7 {7 texture} def
+/p.8 {8 texture} def
+/p.9 {9 texture} def
+/p.10 {10 texture} def
+/p.11 {1 texture.1} def
+/p.12 {2 texture.1} def
+/p.13 {3 texture.1} def
+/p.14 {4 texture.1} def
+/p.15 {15 texture} def
+/p.16 {16 texture} def
+/p.17 {17 texture} def
+/p.18 {18 texture} def
+/p.19 {19 texture} def
+/p.20 {20 texture} def
+/p.21 {1 texture.2} def
+/p.22 {2 texture.2} def
+/p.23 {3 texture.2} def
+/p.24 {4 texture.2} def
+/p.25 {25 texture} def
+/p.26 {26 texture} def
+/p.27 {27 texture} def
+/p.28 {28 texture} def
+/p.29 {29 texture} def
+/p.30 {30 texture} def
+/p.31 {1 texture.3} def
+/p.32 {2 texture.3} def
+/p.33 {3 texture.3} def
+/p.34 {4 texture.3} def
+/p.35 {35 texture} def
+/p.36 {36 texture} def
+/p.37 {37 texture} def
+/p.38 {38 texture} def
+/p.39 {39 texture} def
+/p.40 {40 texture} def
+/p.41 {1 texture.4} def
+/p.42 {2 texture.4} def
+/p.43 {3 texture.4} def
+/p.44 {4 texture.4} def
+/p.45 {45 texture} def
+/p.46 {46 texture} def
+/p.47 {47 texture} def
+/p.48 {48 texture} def
+/p.49 {49 texture} def
+/p.50 {50 texture} def
+/p.51 {1 texture.5} def
+/p.52 {2 texture.5} def
+/p.53 {3 texture.5} def
+/p.54 {4 texture.5} def
+/p.55 {55 texture} def
+/p.56 {56 texture} def
+/p.57 {57 texture} def
+/p.58 {58 texture} def
+/p.59 {59 texture} def
+/p.60 {60 texture} def
+/p.61 {1 texture.6} def
+/p.62 {2 texture.6} def
+/p.63 {3 texture.6} def
+/p.64 {4 texture.6} def
+/p.65 {65 texture} def
+/p.66 {66 texture} def
+/p.67 {67 texture} def
+/p.68 {68 texture} def
+/p.69 {69 texture} def
+/p.70 {70 texture} def
+/p.71 {71 texture} def
+/p.72 {72 texture} def
+/p.73 {73 texture} def
+/p.74 {74 texture} def
+/p.75 {75 texture} def
+/p.76 {76 texture} def
+/p.77 {77 texture} def
+/p.78 {78 texture} def
+/p.79 {79 texture} def
+/p.80 {80 texture} def
+/p.81 {81 texture} def
+/p.82 {82 texture} def
+/p.83 {83 texture} def
+/p.84 {84 texture} def
+/p.85 {85 texture} def
+/p.86 {86 texture} def
+/p.87 {87 texture} def
+/p.88 {88 texture} def
+/p.89 {89 texture} def
+/p.90 {90 texture} def
+/p.91 {91 texture} def
+/p.92 {92 texture} def
+/p.93 {93 texture} def
+/p.94 {94 texture} def
+/p.95 {95 texture} def
+/p.96 {96 texture} def
+/p.97 {97 texture} def
+/p.98 {98 texture} def
+/p.99 {square fill} def
+
+% sircangle
+/sircangle {
+/r exch def /y exch def /x exch def
+x r sub /x exch def
+y r 2 div add /y exch def
+x y r diamond gsave BG fill grestore stroke
+x r add /x exch def 
+y r sub /y exch def
+x y r square gsave BG fill grestore stroke
+x y r 1.3 div sub moveto (male ) showc
+x r add /x exch def 
+y r 1.1 div add /y exch def
+x y 1.16 r mul circle gsave BG fill grestore stroke
+y r 5 div sub /y exch def
+x y moveto (female) showc
+} def
+
+% rgb
+/rgb {
+gsave /r exch def /y exch def /x exch def
+GREEN x y r 2.7 div 0.65 r mul rect fill
+x 2 2.7 div r mul sub /x exch def RED x y r 2.7 div 0.5 r mul rect fill
+x 4 2.7 div r mul add /x exch def BLUE x y r 2.7 div 0.8 r mul rect fill
+x 2 2.7 div r mul sub /x exch def
+x y r 2.8 div sub moveto WHITE (RGB) showc grestore
+} def
+
+% pencil
+/pencil {
+gsave /r exch def /y exch def /x exch def
+x y r 7 div sub translate 0 0 moveto -30 rotate
+0.25 r mul 0.4 r mul moveto 0.75 r mul -0.4 r mul rlineto
+-0.75 r mul -0.4 r mul rlineto -1.25 r mul 0 rlineto
+0 0.8 r mul rlineto closepath gsave BIRCH fill grestore stroke
+r 0 moveto r -3.5 div r -7 div rlineto 0 r 3.5 div rlineto fill
+gsave RED -0.4 r mul 0 0.6 r mul 0.17 r mul rect stroke grestore
+-0.4 r mul 0 0.6 r mul 0.4 r mul rect stroke
+grestore
+} def
+
+% slash
+/slash {
+gsave /r exch def /y exch def /x exch def
+x y 0.7 r mul circle stroke
+x y moveto 0.8 r mul dup rmoveto
+-1.6 r mul dup rlineto stroke
+grestore
+} def
+
+%%EndProlog
+
+%%Page: 1 1
+FF 0.5 SF BG 0 0 M 1145 0 L 1145 1269 L 0 1269 L F
+28.346457 28.346457 scale
+0.50 4.76 translate
+0.942761 0.942761 scale
+1.5 FG 15.326 17.500 M 15.326 17.500 L S
+1.5 FG 1.000 10.847 M 1.000 10.847 L S
+1.5 FG 18.644 17.372 M 18.644 17.372 L S
+1.5 FG 3.000 13.567 M 5.000 13.567 L S
+1.5 FG 4.000 13.567 M 4.000 11.847 L S
+1.5 FG 1.000 10.847 M 1.000 11.847 L 7.000 11.847 L 7.000 10.847 L S
+1.5 FG 3.000 10.847 M 3.000 11.847 L S
+1.5 FG 5.000 10.847 M 5.000 11.847 L S
+1.5 FG 5.690 21.591 M 5.690 21.591 L S
+1.5 FG 7.690 21.591 M 9.690 21.591 L S
+1.5 FG 8.690 21.591 M 8.690 19.871 L S
+1.5 FG 6.690 18.871 M 6.690 19.871 L 10.690 19.871 L 10.690 18.871 L S
+1.5 FG 8.690 18.871 M 8.690 19.871 L S
+1.5 FG 16.212 13.368 M 16.212 13.368 L S
+1.5 FG 9.753 36.384 M 11.753 36.384 L S
+1.5 FG 10.753 36.384 M 10.753 34.664 L S
+1.5 FG 4.753 33.664 M 4.753 34.664 L 16.753 34.664 L 16.753 33.664 L S
+1.5 FG 6.753 33.664 M 6.753 34.664 L S
+1.5 FG 8.753 33.664 M 8.753 34.664 L S
+1.5 FG 10.753 33.664 M 10.753 34.664 L S
+1.5 FG 14.753 33.664 M 14.753 34.664 L S
+1.5 FG 34.771 15.812 M 34.771 15.812 L S
+1.5 FG 36.771 15.812 M 36.771 15.812 L S
+1.5 FG 38.771 15.812 M 38.771 15.812 L S
+1.5 FG 40.771 15.812 M 40.771 15.812 L S
+1.5 FG 26.771 15.812 M 26.771 15.812 L S
+1.5 FG 28.771 15.812 M 28.771 15.812 L S
+1.5 FG 30.771 15.812 M 30.771 15.812 L S
+1.5 FG 32.771 15.812 M 32.771 15.812 L S
+1.5 FG 26.771 18.532 M 26.771 18.532 L S
+1.5 FG 28.771 18.532 M 30.771 18.532 L S
+1.5 FG 29.771 18.532 M 29.771 16.812 L S
+1.5 FG 26.771 15.812 M 26.771 16.812 L 32.771 16.812 L 32.771 15.812 L S
+1.5 FG 28.771 15.812 M 28.771 16.812 L S
+1.5 FG 30.771 15.812 M 30.771 16.812 L S
+1.5 FG 3.000 10.847 M 3.000 10.847 L S
+1.5 FG 5.000 10.847 M 5.000 10.847 L S
+1.5 FG 7.000 10.847 M 9.000 10.847 L S
+1.5 FG 8.000 10.847 M 8.000 9.127 L S
+1.5 FG 5.000 8.127 M 5.000 9.127 L 11.000 9.127 L 11.000 8.127 L S
+1.5 FG 7.000 8.127 M 7.000 9.127 L S
+1.5 FG 9.000 8.127 M 9.000 9.127 L S
+1.5 FG 21.921 16.032 M 21.921 16.032 L S
+1.5 FG 29.643 11.910 M 31.643 11.910 L S
+1.5 FG 30.643 11.910 M 30.643 10.190 L S
+1.5 FG 24.643 9.190 M 24.643 10.190 L 36.643 10.190 L 36.643 9.190 L S
+1.5 FG 26.643 9.190 M 26.643 10.190 L S
+1.5 FG 28.643 9.190 M 28.643 10.190 L S
+1.5 FG 32.643 9.190 M 32.643 10.190 L S
+1.5 FG 18.365 24.147 M 20.365 24.147 L S
+1.5 FG 19.365 24.147 M 19.365 22.427 L S
+1.5 FG 19.365 21.427 M 19.365 22.427 L S
+1.5 FG 11.000 5.407 M 11.000 5.407 L S
+1.5 FG 13.000 5.407 M 13.000 5.407 L S
+1.5 FG 29.643 6.470 M 29.643 6.470 L S
+1.5 FG 5.000 8.127 M 5.000 8.127 L S
+1.5 FG 7.000 8.127 M 7.000 8.127 L S
+1.5 FG 9.000 8.127 M 9.000 8.127 L S
+1.5 FG 11.000 8.127 M 13.000 8.127 L S
+1.5 FG 12.000 8.127 M 12.000 6.407 L S
+1.5 FG 11.000 5.407 M 11.000 6.407 L 13.000 6.407 L 13.000 5.407 L S
+1.5 FG 33.643 6.470 M 33.643 6.470 L S
+1.5 FG 24.643 9.190 M 24.643 9.190 L S
+1.5 FG 26.643 9.190 M 26.643 9.190 L S
+1.5 FG 28.643 9.190 M 30.643 9.190 L S
+1.5 FG 29.643 9.190 M 29.643 7.470 L S
+1.5 FG 29.643 6.470 M 29.643 7.470 L S
+1.5 FG 32.643 9.190 M 34.643 9.190 L S
+1.5 FG 33.643 9.190 M 33.643 7.470 L S
+1.5 FG 33.643 6.470 M 33.643 7.470 L S
+1.5 FG 36.643 9.190 M 36.643 9.190 L S
+1.5 FG 19.365 21.427 M 19.365 21.427 L S
+1.5 FG 26.972 30.546 M 26.972 30.546 L S
+1.5 FG 28.972 30.546 M 28.972 30.546 L S
+1.5 FG 30.972 30.546 M 30.972 30.546 L S
+1.5 FG 23.619 24.051 M 23.619 24.051 L S
+1.5 FG 19.421 12.074 M 21.421 12.074 L S
+1.5 FG 20.421 12.074 M 20.421 10.354 L S
+1.5 FG 19.421 9.354 M 19.421 10.354 L 21.421 10.354 L 21.421 9.354 L S
+1.5 FG 20.826 30.802 M 22.826 30.802 L S
+1.5 FG 21.826 30.802 M 21.826 29.082 L S
+1.5 FG 19.826 28.082 M 19.826 29.082 L 23.826 29.082 L 23.826 28.082 L S
+1.5 FG 21.826 28.082 M 21.826 29.082 L S
+1.5 FG 36.972 25.106 M 36.972 25.106 L S
+1.5 FG 35.972 27.826 M 37.972 27.826 L S
+1.5 FG 36.972 27.826 M 36.972 26.106 L S
+1.5 FG 36.972 25.106 M 36.972 26.106 L S
+1.5 FG 19.421 9.354 M 19.421 9.354 L S
+1.5 FG 21.421 9.354 M 21.421 9.354 L S
+1.5 FG 19.826 28.082 M 19.826 28.082 L S
+1.5 FG 21.826 28.082 M 21.826 28.082 L S
+1.5 FG 14.998 21.814 M 14.998 21.814 L S
+1.5 FG 23.826 28.082 M 23.826 28.082 L S
+1.5 FG 32.972 30.546 M 32.972 30.546 L S
+1.5 FG 34.972 30.546 M 36.972 30.546 L S
+1.5 FG 35.972 30.546 M 35.972 28.826 L S
+1.5 FG 35.972 27.826 M 35.972 28.826 L S
+1.5 FG 38.972 30.546 M 38.972 30.546 L S
+1.5 FG 31.972 33.266 M 33.972 33.266 L S
+1.5 FG 32.972 33.266 M 32.972 31.546 L S
+1.5 FG 26.972 30.546 M 26.972 31.546 L 38.972 31.546 L 38.972 30.546 L S
+1.5 FG 28.972 30.546 M 28.972 31.546 L S
+1.5 FG 30.972 30.546 M 30.972 31.546 L S
+1.5 FG 32.972 30.546 M 32.972 31.546 L S
+1.5 FG 34.972 30.546 M 34.972 31.546 L S
+1.5 FG 23.618 19.936 M 23.618 19.936 L S
+1.5 FG 36.771 18.532 M 38.771 18.532 L S
+1.5 FG 37.771 18.532 M 37.771 16.812 L S
+1.5 FG 34.771 15.812 M 34.771 16.812 L 40.771 16.812 L 40.771 15.812 L S
+1.5 FG 36.771 15.812 M 36.771 16.812 L S
+1.5 FG 38.771 15.812 M 38.771 16.812 L S
+1.5 FG 16.507 5.440 M 18.507 5.440 L S
+1.5 FG 17.507 5.440 M 17.507 3.720 L S
+1.5 FG 16.507 2.720 M 16.507 3.720 L 18.507 3.720 L 18.507 2.720 L S
+1.5 FG 40.771 18.532 M 40.771 18.532 L S
+1.5 FG 10.753 28.224 M 10.753 28.224 L S
+1.5 FG 12.753 28.224 M 12.753 28.224 L S
+1.5 FG 6.690 18.871 M 6.690 18.871 L S
+1.5 FG 8.690 18.871 M 8.690 18.871 L S
+1.5 FG 10.690 18.871 M 10.690 18.871 L S
+1.5 FG 8.753 30.944 M 8.753 30.944 L S
+1.5 FG 10.753 30.944 M 12.753 30.944 L S
+1.5 FG 11.753 30.944 M 11.753 29.224 L S
+1.5 FG 10.753 28.224 M 10.753 29.224 L 12.753 29.224 L 12.753 28.224 L S
+1.5 FG 32.771 21.252 M 34.771 21.252 L S
+1.5 FG 33.771 21.252 M 33.771 19.532 L S
+1.5 FG 26.771 18.532 M 26.771 19.532 L 40.771 19.532 L 40.771 18.532 L S
+1.5 FG 28.771 18.532 M 28.771 19.532 L S
+1.5 FG 36.771 18.532 M 36.771 19.532 L S
+1.5 FG 14.753 30.944 M 14.753 30.944 L S
+1.5 FG 4.753 33.664 M 4.753 33.664 L S
+1.5 FG 6.753 33.664 M 6.753 33.664 L S
+1.5 FG 8.753 33.664 M 8.753 33.664 L S
+1.5 FG 10.753 33.664 M 12.753 33.664 L S
+1.5 FG 11.753 33.664 M 11.753 31.944 L S
+1.5 FG 8.753 30.944 M 8.753 31.944 L 14.753 31.944 L 14.753 30.944 L S
+1.5 FG 10.753 30.944 M 10.753 31.944 L S
+1.5 FG 14.753 33.664 M 14.753 33.664 L S
+1.5 FG 16.753 33.664 M 16.753 33.664 L S
+1.5 FG 16.507 2.720 M 16.507 2.720 L S
+1.5 FG 18.507 2.720 M 18.507 2.720 L S
+1.5 FG 11.690 21.591 M 11.690 21.591 L S
+1.5 FG 7.690 24.311 M 9.690 24.311 L S
+1.5 FG 8.690 24.311 M 8.690 22.591 L S
+1.5 FG 5.690 21.591 M 5.690 22.591 L 11.690 22.591 L 11.690 21.591 L S
+1.5 FG 7.690 21.591 M 7.690 22.591 L S
+1 FG 0.952 0.321 0.433 SC 21.18 21.39 12.74 131.40 191.40 arc S
+1 FG 0.345 0.898 0.339 SC 14.41 5.54 16.64 12.66 72.66 arc S
+1 FG 0.650 0.793 0.162 SC 32.53 17.93 13.37 70.62 130.62 arc S
+1 FG 0.952 0.321 0.433 SC 22.68 26.71 12.12 144.97 204.97 arc S
+1 FG 0.138 0.822 0.639 SC 13.37 7.77 20.46 31.72 91.72 arc S
+1 FG 12.753 30.944 0.667 s.7 GS BG F GR 0.952 0.321 0.433 SC S
+1 FG 8.690 18.871 0.667 s.7 GS BG F GR 0.952 0.321 0.433 SC S
+1 FG 30.643 9.190 0.667 s.7 GS BG F GR 0.345 0.898 0.339 SC S
+1 FG 19.365 21.427 0.667 s.7 GS BG F GR 0.345 0.898 0.339 SC S
+1 FG 36.972 30.546 0.667 s.7 GS BG F GR 0.650 0.793 0.162 SC S
+1 FG 23.826 28.082 0.667 s.7 GS BG F GR 0.650 0.793 0.162 SC S
+1 FG 12.753 33.664 0.667 s.7 GS BG F GR 0.952 0.321 0.433 SC S
+1 FG 11.690 21.591 0.667 s.7 GS BG F GR 0.952 0.321 0.433 SC S
+1 FG 30.771 18.532 0.667 s.7 GS BG F GR 0.138 0.822 0.639 SC S
+1 FG 12.753 28.224 0.667 s.7 GS BG F GR 0.138 0.822 0.639 SC S
+COUR_BOLD
+1.5 FG 15.326 17.500 0.5 s.4 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 14.626 16.500 M (Xvj1.13) SH
+1.20 FG 1.5 FG 1.000 10.847 0.5 s.4 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 0.300 9.847 M (Xvj1.11) SH
+1.20 FG 1.5 FG 18.644 17.372 0.5 s.4 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 17.944 16.372 M (Xvj1.10) SH
+1.20 FG 1.5 FG 3.000 13.567 0.5 s.1 GS 1.000 1.000 1.000 SC F GR
+S
+1.5 FG 5.000 13.567 0.5 s.7 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 2.300 12.567 M (Xvj1.1) SH
+1.20 FG 4.300 12.567 M (Xvj1.0) SH
+1.5 FG 5.690 21.591 0.5 s.4 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 4.990 20.591 M (Lyn2.8) SH
+1.20 FG 1.5 FG 7.690 21.591 0.5 s.7 GS 1.000 1.000 1.000 SC F GR
+S
+1.5 FG 9.690 21.591 0.5 s.1 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 6.990 20.591 M (Lyn2.7) SH
+1.20 FG 8.990 20.591 M (Lyn2.9) SH
+1.5 FG 16.212 13.368 0.5 s.4 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 15.512 12.368 M (Lyn2.6) SH
+1.20 FG 1.5 FG 9.753 36.384 0.5 s.1 GS 1.000 1.000 1.000 SC F GR
+S
+1.5 FG 11.753 36.384 0.5 s.7 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 9.053 35.384 M (Lyn2.5) SH
+1.20 FG 11.053 35.384 M (Lyn2.4) SH
+1.5 FG 34.771 15.812 0.5 s.4 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 34.071 14.812 M (Lyn2.41) SH
+1.20 FG 1.5 FG 36.771 15.812 0.5 s.4 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 36.071 14.812 M (Lyn2.40) SH
+1.20 FG 1.5 FG 38.771 15.812 0.5 s.4 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 38.071 14.812 M (Lyn2.39) SH
+1.20 FG 1.5 FG 40.771 15.812 0.5 s.4 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 40.071 14.812 M (Lyn2.38) SH
+1.20 FG 1.5 FG 26.771 15.812 0.5 s.4 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 26.071 14.812 M (Lyn2.37) SH
+1.20 FG 1.5 FG 28.771 15.812 0.5 s.4 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 28.071 14.812 M (Lyn2.36) SH
+1.20 FG 1.5 FG 30.771 15.812 0.5 s.4 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 30.071 14.812 M (Lyn2.35) SH
+1.20 FG 1.5 FG 32.771 15.812 0.5 s.4 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 32.071 14.812 M (Lyn2.34) SH
+1.20 FG 1.5 FG 26.771 18.532 0.5 s.4 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 26.071 17.532 M (Lyn2.32) SH
+1.20 FG 1.5 FG 28.771 18.532 0.5 s.1 GS 1.000 1.000 1.000 SC F GR
+S
+1.5 FG 30.771 18.532 0.5 s.7 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 28.071 17.532 M (Lyn2.31) SH
+1.20 FG 30.071 17.532 M (Lyn2.27) SH
+1.5 FG 3.000 10.847 0.5 s.4 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 2.300 9.847 M (Xvj1.9) SH
+1.20 FG 1.5 FG 5.000 10.847 0.5 s.4 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 4.300 9.847 M (Xvj1.8) SH
+1.20 FG 1.5 FG 7.000 10.847 0.5 s.7 GS 1.000 1.000 1.000 SC F GR
+S
+1.5 FG 9.000 10.847 0.5 s.1 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 6.300 9.847 M (Xvj1.7) SH
+1.20 FG 8.300 9.847 M (Xvj1.12) SH
+1.5 FG 21.921 16.032 0.5 s.4 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 21.221 15.032 M (Xvj1.6) SH
+1.20 FG 1.5 FG 29.643 11.910 0.5 s.1 GS 1.000 1.000 1.000 SC F GR
+S
+1.5 FG 31.643 11.910 0.5 s.7 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 28.943 10.910 M (Xvj1.5) SH
+1.20 FG 30.943 10.910 M (Xvj1.4) SH
+1.5 FG 18.365 24.147 0.5 s.1 GS 1.000 1.000 1.000 SC F GR
+S
+1.5 FG 20.365 24.147 0.5 s.7 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 17.665 23.147 M (Xvj1.3) SH
+1.20 FG 19.665 23.147 M (Xvj1.2) SH
+1.5 FG 11.000 5.407 0.5 s.4 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 10.300 4.407 M (Xvj1.29) SH
+1.20 FG 1.5 FG 13.000 5.407 0.5 s.4 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 12.300 4.407 M (Xvj1.28) SH
+1.20 FG 1.5 FG 29.643 6.470 0.5 s.4 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 28.943 5.470 M (Xvj1.27) SH
+1.20 FG 1.5 FG 5.000 8.127 0.5 s.4 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 4.300 7.127 M (Xvj1.25) SH
+1.20 FG 1.5 FG 7.000 8.127 0.5 s.4 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 6.300 7.127 M (Xvj1.24) SH
+1.20 FG 1.5 FG 9.000 8.127 0.5 s.4 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 8.300 7.127 M (Xvj1.23) SH
+1.20 FG 1.5 FG 11.000 8.127 0.5 s.7 GS 1.000 1.000 1.000 SC F GR
+S
+1.5 FG 13.000 8.127 0.5 s.1 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 10.300 7.127 M (Xvj1.22) SH
+1.20 FG 12.300 7.127 M (Xvj1.26) SH
+1.5 FG 33.643 6.470 0.5 s.4 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 32.943 5.470 M (Xvj1.21) SH
+1.20 FG 1.5 FG 24.643 9.190 0.5 s.4 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 23.943 8.190 M (Xvj1.20) SH
+1.20 FG 1.5 FG 26.643 9.190 0.5 s.4 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 25.943 8.190 M (Xvj1.19) SH
+1.20 FG 1.5 FG 28.643 9.190 0.5 s.1 GS 1.000 1.000 1.000 SC F GR
+S
+1.5 FG 30.643 9.190 0.5 s.7 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 27.943 8.190 M (Xvj1.18) SH
+1.20 FG 29.943 8.190 M (Xvj1.14) SH
+1.5 FG 32.643 9.190 0.5 s.7 GS 1.000 1.000 1.000 SC F GR
+S
+1.5 FG 34.643 9.190 0.5 s.1 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 31.943 8.190 M (Xvj1.16) SH
+1.20 FG 33.943 8.190 M (Xvj1.17) SH
+1.5 FG 36.643 9.190 0.5 s.4 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 35.943 8.190 M (Xvj1.15) SH
+1.20 FG 1.5 FG 19.365 21.427 0.5 s.7 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 18.665 20.427 M (Xvj1.14) SH
+1.20 FG 1.5 FG 26.972 30.546 0.5 s.4 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 26.272 29.546 M (Htz3.9) SH
+1.20 FG 1.5 FG 28.972 30.546 0.5 s.4 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 28.272 29.546 M (Htz3.8) SH
+1.20 FG 1.5 FG 30.972 30.546 0.5 s.4 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 30.272 29.546 M (Htz3.7) SH
+1.20 FG 1.5 FG 23.619 24.051 0.5 s.4 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 22.919 23.051 M (Htz3.6) SH
+1.20 FG 1.5 FG 19.421 12.074 0.5 s.1 GS 1.000 1.000 1.000 SC F GR
+S
+1.5 FG 21.421 12.074 0.5 s.7 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 18.721 11.074 M (Htz3.5) SH
+1.20 FG 20.721 11.074 M (Htz3.4) SH
+1.5 FG 20.826 30.802 0.5 s.1 GS 1.000 1.000 1.000 SC F GR
+S
+1.5 FG 22.826 30.802 0.5 s.7 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 20.126 29.802 M (Htz3.3) SH
+1.20 FG 22.126 29.802 M (Htz3.2) SH
+1.5 FG 36.972 25.106 0.5 s.4 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 36.272 24.106 M (Htz3.21) SH
+1.20 FG 1.5 FG 35.972 27.826 0.5 s.1 GS 1.000 1.000 1.000 SC F GR
+S
+1.5 FG 37.972 27.826 0.5 s.7 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 35.272 26.826 M (Htz3.19) SH
+1.20 FG 37.272 26.826 M (Htz3.20) SH
+1.5 FG 19.421 9.354 0.5 s.4 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 18.721 8.354 M (Htz3.18) SH
+1.20 FG 1.5 FG 21.421 9.354 0.5 s.4 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 20.721 8.354 M (Htz3.17) SH
+1.20 FG 1.5 FG 19.826 28.082 0.5 s.4 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 19.126 27.082 M (Htz3.16) SH
+1.20 FG 1.5 FG 21.826 28.082 0.5 s.4 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 21.126 27.082 M (Htz3.15) SH
+1.20 FG 1.5 FG 14.998 21.814 0.5 s.4 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 14.298 20.814 M (Htz3.14) SH
+1.20 FG 1.5 FG 23.826 28.082 0.5 s.7 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 23.126 27.082 M (Htz3.13) SH
+1.20 FG 1.5 FG 32.972 30.546 0.5 s.4 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 32.272 29.546 M (Htz3.12) SH
+1.20 FG 1.5 FG 34.972 30.546 0.5 s.1 GS 1.000 1.000 1.000 SC F GR
+S
+1.5 FG 36.972 30.546 0.5 s.7 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 34.272 29.546 M (Htz3.11) SH
+1.20 FG 36.272 29.546 M (Htz3.13) SH
+1.5 FG 38.972 30.546 0.5 s.4 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 38.272 29.546 M (Htz3.10) SH
+1.20 FG 1.5 FG 31.972 33.266 0.5 s.1 GS 1.000 1.000 1.000 SC F GR
+S
+1.5 FG 33.972 33.266 0.5 s.7 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 31.272 32.266 M (Htz3.1) SH
+1.20 FG 33.272 32.266 M (Htz3.0) SH
+1.5 FG 23.618 19.936 0.5 s.4 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 22.918 18.936 M (Fld3.0) SH
+1.20 FG 1.5 FG 36.771 18.532 0.5 s.7 GS 1.000 1.000 1.000 SC F GR
+S
+1.5 FG 38.771 18.532 0.5 s.1 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 36.071 17.532 M (Lyn2.30) SH
+1.20 FG 38.071 17.532 M (Lyn2.33) SH
+1.5 FG 16.507 5.440 0.5 s.1 GS 1.000 1.000 1.000 SC F GR
+S
+1.5 FG 18.507 5.440 0.5 s.7 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 15.807 4.440 M (Lyn2.3) SH
+1.20 FG 17.807 4.440 M (Lyn2.2) SH
+1.5 FG 40.771 18.532 0.5 s.4 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 40.071 17.532 M (Lyn2.29) SH
+1.20 FG 1.5 FG 10.753 28.224 0.5 s.4 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 10.053 27.224 M (Lyn2.28) SH
+1.20 FG 1.5 FG 12.753 28.224 0.5 s.7 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 12.053 27.224 M (Lyn2.27) SH
+1.20 FG 1.5 FG 6.690 18.871 0.5 s.4 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 5.990 17.871 M (Lyn2.26) SH
+1.20 FG 1.5 FG 8.690 18.871 0.5 s.7 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 7.990 17.871 M (Lyn2.25) SH
+1.20 FG 1.5 FG 10.690 18.871 0.5 s.4 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 9.990 17.871 M (Lyn2.23) SH
+1.20 FG 1.5 FG 8.753 30.944 0.5 s.4 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 8.053 29.944 M (Lyn2.22) SH
+1.20 FG 1.5 FG 10.753 30.944 0.5 s.1 GS 1.000 1.000 1.000 SC F GR
+S
+1.5 FG 12.753 30.944 0.5 s.7 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 10.053 29.944 M (Lyn2.21) SH
+1.20 FG 12.053 29.944 M (Lyn2.25) SH
+1.5 FG 32.771 21.252 0.5 s.1 GS 1.000 1.000 1.000 SC F GR
+S
+1.5 FG 34.771 21.252 0.5 s.7 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 32.071 20.252 M (Lyn2.20) SH
+1.20 FG 34.071 20.252 M (Lyn2.24) SH
+1.5 FG 14.753 30.944 0.5 s.4 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 14.053 29.944 M (Lyn2.19) SH
+1.20 FG 1.5 FG 4.753 33.664 0.5 s.4 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 4.053 32.664 M (Lyn2.18) SH
+1.20 FG 1.5 FG 6.753 33.664 0.5 s.4 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 6.053 32.664 M (Lyn2.17) SH
+1.20 FG 1.5 FG 8.753 33.664 0.5 s.4 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 8.053 32.664 M (Lyn2.16) SH
+1.20 FG 1.5 FG 10.753 33.664 0.5 s.1 GS 1.000 1.000 1.000 SC F GR
+S
+1.5 FG 12.753 33.664 0.5 s.7 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 10.053 32.664 M (Lyn2.15) SH
+1.20 FG 12.053 32.664 M (Lyn2.10) SH
+1.5 FG 14.753 33.664 0.5 s.4 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 14.053 32.664 M (Lyn2.14) SH
+1.20 FG 1.5 FG 16.753 33.664 0.5 s.4 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 16.053 32.664 M (Lyn2.13) SH
+1.20 FG 1.5 FG 16.507 2.720 0.5 s.4 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 15.807 1.720 M (Lyn2.12) SH
+1.20 FG 1.5 FG 18.507 2.720 0.5 s.4 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 17.807 1.720 M (Lyn2.11) SH
+1.20 FG 1.5 FG 11.690 21.591 0.5 s.7 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 10.990 20.591 M (Lyn2.10) SH
+1.20 FG 1.5 FG 7.690 24.311 0.5 s.1 GS 1.000 1.000 1.000 SC F GR
+S
+1.5 FG 9.690 24.311 0.5 s.7 GS 1.000 1.000 1.000 SC F GR
+S
+1.20 FG 6.990 23.311 M (Lyn2.1) SH
+1.20 FG 8.990 23.311 M (Lyn2.0) SH
+
+showpage
+
+%%Trailer
+%%Pages 1
+%%EOF

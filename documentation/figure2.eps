@@ -1,0 +1,493 @@
+%!PS-Adobe-1.0
+%%Creator: CraneFoot, Scriptum 1.0 Jan 13 2006
+%%CreationDate: Jan 15 2006
+%%Title: myPedigree_family.eps
+%%Pages: 1
+%%BoundingBox: 0 0 430 180
+%%EndComments
+
+% fonts
+/HELV_HUGE {/Helvetica-Bold findfont 0.7056 scalefont setfont} def
+/HELV_LARGE {/Helvetica findfont 0.5292 scalefont setfont} def
+/HELV {/Helvetica findfont 0.3528 scalefont setfont} def
+/HELV_BOLD {/Helvetica-Bold findfont 0.3528 scalefont setfont} def
+/HELV_ITALIC {/Helvetica-Italic findfont 0.3528 scalefont setfont} def
+/HELV_SMALL {/Helvetica findfont 0.2822 scalefont setfont} def
+/COUR_BOLD {/Courier-Bold findfont 0.3528 scalefont setfont} def
+/COUR_BOLD_SMALL {/Courier-Bold findfont 0.2822 scalefont setfont} def
+
+% predefined colors
+/BLACK {0 setgray} def
+/GRAY {0.6 setgray} def
+/WHITE {1 setgray} def
+/RED {1 0.2 0.05 setrgbcolor} def
+/GREEN {0.2 1 0.1 setrgbcolor} def
+/BLUE {0.1 0.4 1 setrgbcolor} def
+/YELLOW {1 0.95 0.5 setrgbcolor} def
+/ORANGE {1 0.6 0.2 setrgbcolor} def
+/BIRCH {1 0.95 0.8 setrgbcolor} def
+/SKY {0.0 0.35 0.65 setrgbcolor} def
+
+% string procedures
+/showr {dup stringwidth add -1 mul 0 rmoveto show} def
+/showc {dup stringwidth add -0.5 mul 0 rmoveto show} def
+
+% shorthands
+/BG {1.0000 1.0000 1.0000 setrgbcolor} def
+/FG {newpath 0.0000 0.0000 0.0000 setrgbcolor 0.04 mul setlinewidth} def
+/CP {charpath} def
+/CL {closepath} def
+/F {fill} def
+/GS {gsave} def
+/GR {grestore} def
+/L {lineto} def
+/RL {rlineto} def
+/M {moveto} def
+/NP {newpath} def
+/S {stroke} def
+/SC {setrgbcolor} def
+/SG {setgray} def
+/SL {setlinewidth} def
+/FF {/Helvetica findfont} def
+/SF {scalefont setfont} def
+/SH {dup gsave 1.0000 1.0000 1.0000 setrgbcolor
+  true charpath stroke grestore show} def
+
+% shape primitives
+/s.1 {
+newpath 0 360 arc closepath
+} def
+/s.2 {
+1.25 mul /rp exch def /yp exch def /xp exch def
+newpath xp yp moveto
+rp 0.0000 mul rp 0.8000 mul rmoveto
+rp -0.8660 mul rp -1.5000 mul rlineto
+rp 1.7321 mul rp -0.0000 mul rlineto
+rp -0.8660 mul rp 1.5000 mul rlineto
+closepath
+} def
+/s.3 {
+1.2 mul /rp exch def /yp exch def /xp exch def
+newpath xp yp moveto
+rp 0.3536 mul rp 0.3536 mul rmoveto
+rp -0.0947 mul rp 0.6124 mul rlineto
+rp -0.5176 mul rp 0.0000 mul rlineto
+rp -0.0947 mul rp -0.6124 mul rlineto
+rp -0.6124 mul rp -0.0947 mul rlineto
+rp -0.0000 mul rp -0.5176 mul rlineto
+rp 0.6124 mul rp -0.0947 mul rlineto
+rp 0.0947 mul rp -0.6124 mul rlineto
+rp 0.5176 mul rp -0.0000 mul rlineto
+rp 0.0947 mul rp 0.6124 mul rlineto
+rp 0.6124 mul rp 0.0947 mul rlineto
+rp 0.0000 mul rp 0.5176 mul rlineto
+rp -0.6124 mul rp 0.0947 mul rlineto
+closepath
+} def
+/s.4 {
+/rp exch def /yp exch def /xp exch def
+newpath xp rp sub yp moveto
+rp rp 1.16 mul rlineto rp rp -1.16 mul rlineto
+rp neg rp -1.16 mul rlineto closepath
+} def
+/s.5 {
+1.2 mul /rp exch def /yp exch def /xp exch def
+newpath xp yp moveto
+rp 0.0000 mul rp -0.6000 mul rmoveto
+rp 0.5878 mul rp -0.2090 mul rlineto
+rp -0.0172 mul rp 0.6236 mul rlineto
+rp 0.3804 mul rp 0.4944 mul rlineto
+rp -0.5984 mul rp 0.1764 mul rlineto
+rp -0.3527 mul rp 0.5146 mul rlineto
+rp -0.3527 mul rp -0.5146 mul rlineto
+rp -0.5984 mul rp -0.1764 mul rlineto
+rp 0.3804 mul rp -0.4944 mul rlineto
+rp -0.0172 mul rp -0.6236 mul rlineto
+closepath
+} def
+/s.6 {
+1.25 mul /rp exch def /yp exch def /xp exch def
+newpath xp yp moveto
+rp 0.0000 mul rp -0.8000 mul rmoveto
+rp 0.8660 mul rp 1.5000 mul rlineto
+rp -1.7321 mul rp 0.0000 mul rlineto
+rp 0.8660 mul rp -1.5000 mul rlineto
+closepath
+} def
+/s.7 {
+0.9 mul /rp exch def /yp exch def /xp exch def
+newpath xp rp add yp rp add moveto
+0 rp -2 mul rlineto rp -2 mul 0 rlineto 0 rp 2 mul rlineto
+closepath
+} def
+/s.8 {
+1.2 mul /rp exch def /yp exch def /xp exch def
+newpath xp yp moveto
+rp 0.0000 mul rp 0.5000 mul rmoveto
+rp -0.5000 mul rp 0.3660 mul rlineto
+rp -0.3660 mul rp -0.3660 mul rlineto
+rp 0.3660 mul rp -0.5000 mul rlineto
+rp -0.3660 mul rp -0.5000 mul rlineto
+rp 0.3660 mul rp -0.3660 mul rlineto
+rp 0.5000 mul rp 0.3660 mul rlineto
+rp 0.5000 mul rp -0.3660 mul rlineto
+rp 0.3660 mul rp 0.3660 mul rlineto
+rp -0.3660 mul rp 0.5000 mul rlineto
+rp 0.3660 mul rp 0.5000 mul rlineto
+rp -0.3660 mul rp 0.3660 mul rlineto
+rp -0.5000 mul rp -0.3660 mul rlineto
+closepath
+} def
+/square {
+/rp exch def /yp exch def /xp exch def
+newpath xp rp add yp rp add moveto
+0 rp -2 mul rlineto rp -2 mul 0 rlineto 0 rp 2 mul rlineto
+closepath
+} def
+/rect {
+/hp exch def /wp exch def /yp exch def /xp exch def
+newpath xp wp add yp hp add moveto
+0 hp -2 mul rlineto wp -2 mul 0 rlineto 0 hp 2 mul rlineto
+closepath
+} def
+/circle {
+newpath 0 360 arc closepath
+} def
+/diamond {
+1.15 mul /rp exch def /yp exch def /xp exch def
+newpath xp rp sub yp moveto
+rp rp rlineto rp rp neg rlineto rp neg rp neg rlineto
+closepath
+} def
+
+% textures
+/texture {
+/i exch def /r exch def /y exch def /x exch def
+x y r 2.5 div sub moveto i 4 string cvs showc
+} def
+/texture.1 {
+/i exch def /r exch def /y exch def /x exch def
+gsave x y translate 45 i mul rotate
+2 r mul r moveto -4 r mul 0 rlineto stroke
+2 r mul r 2 div moveto -4 r mul 0 rlineto stroke
+2 r mul 0 moveto -4 r mul 0 rlineto stroke
+2 r mul r -2 div moveto -4 r mul 0 rlineto stroke
+2 r mul r neg moveto -4 r mul 0 rlineto stroke grestore
+} def
+/texture.2 {
+/i exch def /r exch def /y exch def /x exch def
+gsave x y translate 90 i mul rotate r r r square fill
+grestore
+} def
+/texture.3 {
+/i exch def /r exch def /y exch def /x exch def
+gsave x y translate 90 i mul 45 add rotate
+0 r r circle fill grestore
+} def
+/texture.4 {
+/i exch def /r exch def /y exch def /x exch def
+gsave x y translate 90 i mul rotate 0 r 2 r mul r rect fill grestore
+} def
+/texture.5 {
+/i exch def /r exch def /y exch def /x exch def
+gsave x y translate 45 i mul rotate
+r r r square fill r neg r neg r square fill grestore
+} def
+/texture.6 {
+/i exch def /r exch def /y exch def /x exch def
+gsave x y translate 90 i mul rotate
+2 {0 r 2 r mul r rect fill 90 rotate} repeat grestore
+} def
+
+% patterns of texture
+/p.1 {pop pop pop} def
+/p.2 {2 texture} def
+/p.3 {3 texture} def
+/p.4 {4 texture} def
+/p.5 {5 texture} def
+/p.6 {6 texture} def
+/p.7 {7 texture} def
+/p.8 {8 texture} def
+/p.9 {9 texture} def
+/p.10 {10 texture} def
+/p.11 {1 texture.1} def
+/p.12 {2 texture.1} def
+/p.13 {3 texture.1} def
+/p.14 {4 texture.1} def
+/p.15 {15 texture} def
+/p.16 {16 texture} def
+/p.17 {17 texture} def
+/p.18 {18 texture} def
+/p.19 {19 texture} def
+/p.20 {20 texture} def
+/p.21 {1 texture.2} def
+/p.22 {2 texture.2} def
+/p.23 {3 texture.2} def
+/p.24 {4 texture.2} def
+/p.25 {25 texture} def
+/p.26 {26 texture} def
+/p.27 {27 texture} def
+/p.28 {28 texture} def
+/p.29 {29 texture} def
+/p.30 {30 texture} def
+/p.31 {1 texture.3} def
+/p.32 {2 texture.3} def
+/p.33 {3 texture.3} def
+/p.34 {4 texture.3} def
+/p.35 {35 texture} def
+/p.36 {36 texture} def
+/p.37 {37 texture} def
+/p.38 {38 texture} def
+/p.39 {39 texture} def
+/p.40 {40 texture} def
+/p.41 {1 texture.4} def
+/p.42 {2 texture.4} def
+/p.43 {3 texture.4} def
+/p.44 {4 texture.4} def
+/p.45 {45 texture} def
+/p.46 {46 texture} def
+/p.47 {47 texture} def
+/p.48 {48 texture} def
+/p.49 {49 texture} def
+/p.50 {50 texture} def
+/p.51 {1 texture.5} def
+/p.52 {2 texture.5} def
+/p.53 {3 texture.5} def
+/p.54 {4 texture.5} def
+/p.55 {55 texture} def
+/p.56 {56 texture} def
+/p.57 {57 texture} def
+/p.58 {58 texture} def
+/p.59 {59 texture} def
+/p.60 {60 texture} def
+/p.61 {1 texture.6} def
+/p.62 {2 texture.6} def
+/p.63 {3 texture.6} def
+/p.64 {4 texture.6} def
+/p.65 {65 texture} def
+/p.66 {66 texture} def
+/p.67 {67 texture} def
+/p.68 {68 texture} def
+/p.69 {69 texture} def
+/p.70 {70 texture} def
+/p.71 {71 texture} def
+/p.72 {72 texture} def
+/p.73 {73 texture} def
+/p.74 {74 texture} def
+/p.75 {75 texture} def
+/p.76 {76 texture} def
+/p.77 {77 texture} def
+/p.78 {78 texture} def
+/p.79 {79 texture} def
+/p.80 {80 texture} def
+/p.81 {81 texture} def
+/p.82 {82 texture} def
+/p.83 {83 texture} def
+/p.84 {84 texture} def
+/p.85 {85 texture} def
+/p.86 {86 texture} def
+/p.87 {87 texture} def
+/p.88 {88 texture} def
+/p.89 {89 texture} def
+/p.90 {90 texture} def
+/p.91 {91 texture} def
+/p.92 {92 texture} def
+/p.93 {93 texture} def
+/p.94 {94 texture} def
+/p.95 {95 texture} def
+/p.96 {96 texture} def
+/p.97 {97 texture} def
+/p.98 {98 texture} def
+/p.99 {square fill} def
+
+% sircangle
+/sircangle {
+/r exch def /y exch def /x exch def
+x r sub /x exch def
+y r 2 div add /y exch def
+x y r diamond gsave BG fill grestore stroke
+x r add /x exch def 
+y r sub /y exch def
+x y r square gsave BG fill grestore stroke
+x y r 1.3 div sub moveto (male ) showc
+x r add /x exch def 
+y r 1.1 div add /y exch def
+x y 1.16 r mul circle gsave BG fill grestore stroke
+y r 5 div sub /y exch def
+x y moveto (female) showc
+} def
+
+% rgb
+/rgb {
+gsave /r exch def /y exch def /x exch def
+GREEN x y r 2.7 div 0.65 r mul rect fill
+x 2 2.7 div r mul sub /x exch def RED x y r 2.7 div 0.5 r mul rect fill
+x 4 2.7 div r mul add /x exch def BLUE x y r 2.7 div 0.8 r mul rect fill
+x 2 2.7 div r mul sub /x exch def
+x y r 2.8 div sub moveto WHITE (RGB) showc grestore
+} def
+
+% pencil
+/pencil {
+gsave /r exch def /y exch def /x exch def
+x y r 7 div sub translate 0 0 moveto -30 rotate
+0.25 r mul 0.4 r mul moveto 0.75 r mul -0.4 r mul rlineto
+-0.75 r mul -0.4 r mul rlineto -1.25 r mul 0 rlineto
+0 0.8 r mul rlineto closepath gsave BIRCH fill grestore stroke
+r 0 moveto r -3.5 div r -7 div rlineto 0 r 3.5 div rlineto fill
+gsave RED -0.4 r mul 0 0.6 r mul 0.17 r mul rect stroke grestore
+-0.4 r mul 0 0.6 r mul 0.4 r mul rect stroke
+grestore
+} def
+
+% slash
+/slash {
+gsave /r exch def /y exch def /x exch def
+x y 0.7 r mul circle stroke
+x y moveto 0.8 r mul dup rmoveto
+-1.6 r mul dup rlineto stroke
+grestore
+} def
+
+/HLEGEND {
+gsave 0.7500 FG /Helvetica findfont 0.2250 scalefont setfont
+
+/Helvetica findfont 0.2850 scalefont setfont
+
+5.175 6.300 0.225 circle
+gsave clip 0.000000 0.000000 0.000000 setrgbcolor fill grestore stroke
+5.685 6.200 moveto (000000) show
+5.175 5.700 0.225 circle
+gsave clip 0.000000 0.000000 1.000000 setrgbcolor fill grestore stroke
+5.685 5.600 moveto (000099) show
+5.175 5.100 0.225 circle
+gsave clip 0.000000 1.000000 0.000000 setrgbcolor fill grestore stroke
+5.685 5.000 moveto (009900) show
+5.175 4.500 0.225 circle
+gsave clip 0.000000 1.000000 1.000000 setrgbcolor fill grestore stroke
+5.685 4.400 moveto (009999) show
+5.175 3.900 0.225 circle
+gsave clip 0.505050 0.505050 0.505050 setrgbcolor fill grestore stroke
+5.685 3.800 moveto (505050) show
+5.175 3.300 0.225 circle
+gsave clip 1.000000 0.000000 0.000000 setrgbcolor fill grestore stroke
+5.685 3.200 moveto (990000) show
+5.175 2.700 0.225 circle
+gsave clip 1.000000 0.000000 1.000000 setrgbcolor fill grestore stroke
+5.685 2.600 moveto (990099) show
+5.175 2.100 0.225 circle
+gsave clip 1.000000 1.000000 0.000000 setrgbcolor fill grestore stroke
+5.685 2.000 moveto (999900) show
+5.175 1.500 0.225 circle
+gsave clip 1.000000 1.000000 1.000000 setrgbcolor fill grestore stroke
+5.685 1.400 moveto (999999) show
+8.550 6.300 0.240 s.7 gsave clip
+8.550 6.300 0.240 p.11 grestore stroke
+9.060 6.200 moveto (11) show
+8.550 5.700 0.240 s.7 gsave clip
+8.550 5.700 0.240 p.12 grestore stroke
+9.060 5.600 moveto (12) show
+8.550 5.100 0.240 s.7 gsave clip
+8.550 5.100 0.240 p.13 grestore stroke
+9.060 5.000 moveto (13) show
+8.550 4.500 0.240 s.7 gsave clip
+8.550 4.500 0.240 p.14 grestore stroke
+9.060 4.400 moveto (14) show
+8.550 3.900 0.240 s.7 gsave clip
+8.550 3.900 0.240 p.21 grestore stroke
+9.060 3.800 moveto (21) show
+8.550 3.300 0.240 s.7 gsave clip
+8.550 3.300 0.240 p.22 grestore stroke
+9.060 3.200 moveto (22) show
+8.550 2.700 0.240 s.7 gsave clip
+8.550 2.700 0.240 p.23 grestore stroke
+9.060 2.600 moveto (23) show
+8.550 2.100 0.240 s.7 gsave clip
+8.550 2.100 0.240 p.24 grestore stroke
+9.060 2.000 moveto (24) show
+8.550 1.500 0.240 s.7 gsave clip
+8.550 1.500 0.240 p.31 grestore stroke
+9.060 1.400 moveto (31) show
+11.925 6.300 0.240 s.7 gsave clip
+11.925 6.300 0.240 p.32 grestore stroke
+12.435 6.200 moveto (32) show
+11.925 5.700 0.240 s.7 gsave clip
+11.925 5.700 0.240 p.33 grestore stroke
+12.435 5.600 moveto (33) show
+11.925 5.100 0.240 s.7 gsave clip
+11.925 5.100 0.240 p.34 grestore stroke
+12.435 5.000 moveto (34) show
+11.925 4.500 0.240 s.7 gsave clip
+11.925 4.500 0.240 p.41 grestore stroke
+12.435 4.400 moveto (41) show
+11.925 3.900 0.240 s.7 gsave clip
+11.925 3.900 0.240 p.42 grestore stroke
+12.435 3.800 moveto (42) show
+11.925 3.300 0.240 s.7 gsave clip
+11.925 3.300 0.240 p.43 grestore stroke
+12.435 3.200 moveto (43) show
+11.925 2.700 0.240 s.7 gsave clip
+11.925 2.700 0.240 p.44 grestore stroke
+12.435 2.600 moveto (44) show
+11.925 2.100 0.240 s.7 gsave clip
+11.925 2.100 0.240 p.51 grestore stroke
+12.435 2.000 moveto (51) show
+11.925 1.500 0.240 s.7 gsave clip
+11.925 1.500 0.240 p.52 grestore stroke
+12.435 1.400 moveto (52) show
+15.300 6.300 0.240 s.7 gsave clip
+15.300 6.300 0.240 p.53 grestore stroke
+15.810 6.200 moveto (53) show
+15.300 5.700 0.240 s.7 gsave clip
+15.300 5.700 0.240 p.54 grestore stroke
+15.810 5.600 moveto (54) show
+15.300 5.100 0.240 s.7 gsave clip
+15.300 5.100 0.240 p.61 grestore stroke
+15.810 5.000 moveto (61) show
+15.300 4.500 0.240 s.7 gsave clip
+15.300 4.500 0.240 p.62 grestore stroke
+15.810 4.400 moveto (62) show
+15.300 3.900 0.240 s.7 gsave clip
+15.300 3.900 0.240 p.63 grestore stroke
+15.810 3.800 moveto (63) show
+15.300 3.300 0.240 s.7 gsave clip
+15.300 3.300 0.240 p.64 grestore stroke
+15.810 3.200 moveto (64) show
+15.300 2.700 0.240 s.7 gsave clip
+15.300 2.700 0.240 p.99 grestore stroke
+15.810 2.600 moveto (99) show
+
+18.500 6.300 0.180 s.1 stroke
+19.010 6.200 moveto (1) show
+18.500 5.700 0.180 s.2 stroke
+19.010 5.600 moveto (2) show
+18.500 5.100 0.180 s.3 stroke
+19.010 5.000 moveto (3) show
+18.500 4.500 0.180 s.4 stroke
+19.010 4.400 moveto (4) show
+18.500 3.900 0.180 s.5 stroke
+19.010 3.800 moveto (5) show
+18.500 3.300 0.180 s.6 stroke
+19.010 3.200 moveto (6) show
+18.500 2.700 0.180 s.7 stroke
+19.010 2.600 moveto (7) show
+18.500 2.100 0.180 s.8 stroke
+19.010 2.000 moveto (8) show
+
+
+grestore
+} def
+
+%%EndProlog
+
+%%Page: 1 1
+-130 -20 translate
+FF 0.5 SF
+28.346457 28.346457 scale
+HLEGEND
+
+showpage
+
+%%Trailer
+%%Pages 1
+%%EOF
