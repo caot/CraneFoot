@@ -148,3 +148,27 @@ ConfigTable::ordinal(const string& attr, const int n_arg, ...) const {
   
   return -1;
 }
+
+string ConfigTable::getPedigreeFilename() {
+  if (!this->pedigreeFile.empty())
+    return this->pedigreeFile;
+  return this->operator []("PedigreeFile")[1];
+}
+
+string ConfigTable::trim(const string& str, const string& suffix) {
+  if (str.find(suffix, str.size() - suffix.size()) != string::npos) {
+    return str.substr(0, str.size() - suffix.size());
+  } else {
+    return str;
+  }
+}
+
+string ConfigTable::getPedigreeName() {
+  if (!this->pedigreeFile.empty())
+    return trim(pedigreeFile, ".txt");
+  return this->operator []("PedigreeName")[1];
+}
+
+void ConfigTable::setPedigreeFilename(const string& pedigreeFile) {
+  this->pedigreeFile = pedigreeFile;
+}

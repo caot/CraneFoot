@@ -47,9 +47,11 @@ PedigreeObject::PedigreeObject() {
 /*
  *
  */
-PedigreeObject::PedigreeObject(const string& fname) {
+PedigreeObject::PedigreeObject(const string& fname, const string& pedigreeFile) {
   /* Check configuration file. */
   cfg = ConfigTable(fname, '\0');
+  if (!pedigreeFile.empty())
+    cfg.setPedigreeFilename(pedigreeFile);
   if(cfg.size() < 1) {
     cout << "WARNING! Configuration file '" << cfg.source()
 	 << "' is empty or cannot be opened.\n";
@@ -130,11 +132,11 @@ check_parameters(ConfigTable& cfg) {
   }
 
   /* Check critical parameters. */
-  if(cfg["PedigreeFile"].size() < 2) {
+  if(cfg.getPedigreeFilename().size() < 2) {
     cout << "WARNING! Pedigree file not defined.\n";
     flag = false;
   }
-  if(cfg["PedigreeName"].size() < 2) {
+  if(cfg.getPedigreeName().size() < 2) {
     cout << "WARNING! Pedigree name not defined.\n";
     flag = false;
   }
@@ -183,7 +185,8 @@ print_greeting(int level) {
 
   if(level < 1) return;
 
-  cout << "\n  Usage: cranefoot CFGFILE\n\n";
+  cout << "\n  Usage: cranefoot CFGFILE";
+  cout << "\n         cranefoot CFGFILE PedigreeFile\n\n";
 
   cout << "  Format of CFGFILE:\n";
   cout << "  PARAM                  VALUE1      VALUE2\n";

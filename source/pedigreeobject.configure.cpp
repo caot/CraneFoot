@@ -62,7 +62,7 @@ PedigreeObject::configure() {
   }
 
   /* Copy data from primary pedigree file. */
-  ped_file = cfg["PedigreeFile"][1];
+  ped_file = cfg.getPedigreeFilename();
   data = Table(ped_file, delim);
   if(data.size() < 1) {
     cout << "WARNING! File '" << ped_file

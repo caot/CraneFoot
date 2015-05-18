@@ -196,7 +196,7 @@ namespace cranefoot {
 
     /* Create a new pedigree as instructed in the configuration file.
        The argument specificies the path to the file. */
-    Pedigree(const std::string&);
+    Pedigree(const std::string&, const std::string&);
 
     /* Free all resources associated with the pedigree. */
     ~Pedigree();

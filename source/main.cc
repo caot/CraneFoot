@@ -38,11 +38,16 @@
  */
 int
 main(int argc, char** args) {
-  if(argc < 2) {
+  cranefoot::Pedigree ped;
+  if(argc == 2) {
+    ped = cranefoot::Pedigree(args[1], "");
+  } else if(argc == 3) {
+    ped = cranefoot::Pedigree(args[1], args[2]);
+  } else {
     cranefoot::Pedigree();
     return 1;
   }
-  cranefoot::Pedigree ped(args[1]);
+
   if(ped.run()) return 0;
   return 1;
 }

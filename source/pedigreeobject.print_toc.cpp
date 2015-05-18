@@ -57,7 +57,7 @@ PedigreeObject::print_toc(PostScript& ps) {
   
   /* Prepare entries in the list. */
   entries = get_entries(n_correct, families, ps);
-  make_title(ps, families, cfg["PedigreeName"][1], n_correct);
+  make_title(ps, families, cfg.getPedigreeName(), n_correct);
   make_list(ps, entries, n_correct);
 
   if(n_correct < 1) return false;

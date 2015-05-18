@@ -37,6 +37,8 @@
 #include <string>
 #include <vector>
 
+using namespace std;
+
 namespace tablet {
 
   /*
@@ -79,8 +81,8 @@ namespace tablet {
   class Table {
   protected:
     void* buffer;
+    string pedigreeFile;
   public:
-
     /* Create empty table. */
     Table();
 
@@ -184,6 +186,11 @@ namespace tablet {
       specifies the number of strings that are listed by subsequent
       arguments. If no match is found, a negative value is returned.*/
     int ordinal(const std::string&, const int, ...) const;
+
+    string getPedigreeFilename();
+    string getPedigreeName();
+    string trim(const string&, const string&);
+    void setPedigreeFilename(const string&);
   };
 
   /*

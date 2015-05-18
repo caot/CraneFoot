@@ -54,15 +54,16 @@ PedigreeObject::import() {
   if(cfg["Male"][1].length() > 0) male = cfg["Male"][1][0];
   if(cfg["Female"][1].length() > 0) female = cfg["Female"][1][0];
 
+  string pedigreeFile = cfg.getPedigreeFilename();
   /* Find topology variables. */
-  map<string, Locus>& loci = variables[cfg["PedigreeFile"][1]];
+  map<string, Locus>& loci = variables[pedigreeFile];
   int var1 = loci["NameVariable"].column;
   int var2 = loci["FatherVariable"].column;
   int var3 = loci["MotherVariable"].column;
  
   /* Create graph representation. */
   string label = "";
-  Table& tped = tables[cfg["PedigreeFile"][1]];
+  Table& tped = tables[pedigreeFile];
   tped.sort(vector<int>(1, var1));
   for(i = 0; i < tped.size(); i++) {
     Row r = tped[i];

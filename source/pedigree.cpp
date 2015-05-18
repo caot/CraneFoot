@@ -52,8 +52,8 @@ Pedigree::Pedigree(const Pedigree& ped) {
 /*
  *
  */
-Pedigree::Pedigree(const string& fname) {
-  buffer = new PedigreeObject(fname);
+Pedigree::Pedigree(const string& fname, const string& pedigreeFile) {
+  buffer = new PedigreeObject(fname, pedigreeFile);
 }
 
 /*

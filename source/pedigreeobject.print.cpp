@@ -52,7 +52,7 @@ PedigreeObject::print() {
 
   /* Prepare main document. */
   if(verbose_mode) cout << "\nMedia instructions:\n";
-  ps = PostScript(cfg["PedigreeName"][1] + ".ps");
+  ps = PostScript(cfg.trim(cfg.getPedigreeFilename(), ".txt") + ".ps");
   customize(ps, cfg);
   w = print_vlegend(ps);
   h = print_hlegend(ps);
@@ -105,7 +105,7 @@ PedigreeObject::print() {
     }
     
     /* Create eps template. */
-    ps = PostScript(cfg["PedigreeName"][1] + "_" + pos->first + ".eps");
+    ps = PostScript(cfg.getPedigreeName() + "_" + pos->first + ".eps");
     customize(ps, cfg);
     ps.assign("DocumentMode", "encaps"); 
     ps.assign("PageSize", string(buffer));
@@ -130,7 +130,7 @@ PedigreeObject::print() {
   
   /* Open topology file. */
   char iobuf[131072];
-  string fname = (cfg["PedigreeName"][1] + ".topology.txt");
+  string fname = (cfg.getPedigreeName() + ".topology.txt");
   FILE* output = fopen(fname.c_str(), "w");
   if(output == NULL) {
     printf("WARNING! Cannot open '%s'.\n", fname.c_str());
@@ -248,7 +248,7 @@ prepare(PostScript& ps, Family& family, float lwidth, float lheight,
       if(vscale > text_height/height)
 	vscale = text_height/height;
     }
-    
+
     /* Determine better legend. */
     if((vscale <= 0.0) && (hscale <= 0.0)) {
       printf("WARNING! %s: Legend is too large.\n", __FILE__);

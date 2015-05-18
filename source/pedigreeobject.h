@@ -132,13 +132,13 @@ public:
   map<string, Emblem> emblems;
 public:
   PedigreeObject();
-  PedigreeObject(const string&);
+  PedigreeObject(const string&, const string&);
   void print();
   bool run();
   Emblem emblem(const string& s) {
     if(emblems.count(s) > 0) return emblems[s];
   };
-  std::string name() {return cfg["PedigreeName"][1];};
+  std::string name() {return cfg.getPedigreeName();};
   unsigned int size() {return emblems.size();};
 };
 
