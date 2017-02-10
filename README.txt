@@ -38,3 +38,6 @@ or clarify the software structure, I would be most happy to hear from it.
 PS. Note also the C#-interface (cs_cranefoot2.zip) by A. Gurau.
 
 -- Ville Makinen
+
+
+The java interface is at link https://github.com/caot/CraneFootJava
