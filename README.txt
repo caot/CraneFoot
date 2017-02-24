@@ -1,4 +1,4 @@
-CraneFoot v3 API
+# CraneFoot v3 API
 
 The source code is organized in a few independent modules that communicate
 through streamlined object interfaces. For many classes there is one
@@ -40,4 +40,6 @@ PS. Note also the C#-interface (cs_cranefoot2.zip) by A. Gurau.
 -- Ville Makinen
 
 
+
+# java interface
 The java interface is at link https://github.com/caot/CraneFootJava
