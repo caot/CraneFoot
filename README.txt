@@ -39,6 +39,16 @@ PS. Note also the C#-interface (cs_cranefoot2.zip) by A. Gurau.
 
 -- Ville Makinen
 
+# Linux/UNIX installation
+Before you can start using CraneFoot on other than Windows systems, you have
+to unpack the source code and combile it to a binary executable. In most UNIX-
+based systems the compiler software is already installed. CraneFoot is written in
+C/C++ and usual commands for a C++ compiler include c++ and g++, the latter
+is associated with the GNU compiler which is usually a safe choice. To make the
+executable, unpack the installation package (unzip or similar), go to the ’source’
+directory and type
+
+`g++ -O5 -o cranefoot main.cc *.cpp -lm`
 
 
 # java interface
